@@ -19,6 +19,13 @@ const closeWindow = function(){
 }
 //Close window and hide overlay
 closeWindowBtn.addEventListener("click",closeWindow)
-
-
 overlay.addEventListener("click",closeWindow)
+//keyborad event
+document.addEventListener("keydown",function(event){
+  if(event.key === "Escape" && !windowMy.classList.contains("hidden")){
+    closeWindow()
+
+  }
+
+
+})
