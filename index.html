@@ -7,14 +7,23 @@
   </head>
 
   <body>
-      <div>
          
-         <button class="wind"><span>Window Model:1</span></button>
+         <button class="wind"><span>Variables</span></button>
          <button class="wind"><span>Window Model:2</span></button>
          <button class="wind"><span>Window Model:3</span></button>
-       
-      </div>
-     
+        
+       <div class="windows hidden">
+         <button class="close-window">X</button>
+        <h1>Variables</h1>
+        <p>
+          In ES5 we used the var keyword to define variables. 
+          The scope of the var keyword is the entire enclosing function and if you use it at the top level outside of a function, it creates a property on the global object which cause issues. To fix these problems, ES6 created the variables let and const that are scoped to the containing “block” not “function”. 
+          Also let and const don’t create a property on the global object if you use them at the top level.
+          
+        </p>
+
+       </div>
+       <div class="overlay hidden"></div>
     <script src="index.js"></script>
   </body>
 
